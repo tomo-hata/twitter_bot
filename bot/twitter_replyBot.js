@@ -21,7 +21,7 @@ bot.stream( 'statuses/filter', { track : json_config.tweet_info[0].tracking_twid
     var tweet = data.text;
     console.log(tweet);
     /* setting of text to reply */
-    var dateStr = new Date().toFormat("YYYY/MM/DD/ HH24:MI");
+    var dateStr = new Date().toFormat("YYYY/MM/DD/ HH24:MI:SS");
     /* Reply messages are called from message file */
     //var textCreatTOReply = '@' + data.user.screen_name +  ' ' + json_msg.Reply_meg[0].reply_normal + '\n\n' + dateStr;
     var textCreatTOReply = '@' + data.user.screen_name +  ' ' + json_msg.Reply_meg[0].reply_normal;       
