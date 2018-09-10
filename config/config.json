@@ -7,5 +7,7 @@
   ],
   "tweet_info":[
     {"tracking_twid": "@xxx"}
-  ]
+  ],
+  "request_options": [
+    {"proxy": "http://proxy.xxx:[port]"}
 }
