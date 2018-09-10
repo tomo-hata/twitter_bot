@@ -12,7 +12,11 @@ var bot = new twitter({
   consumer_key        : json_config.key_token[0].consumer_key,
   consumer_secret     : json_config.key_token[0].consumer_secret,
   access_token_key    : json_config.key_token[0].access_token_key,
-  access_token_secret : json_config.key_token[0].access_token_secret
+  access_token_secret : json_config.key_token[0].access_token_secret,
+  request_options: {
+    /* If you want to set proxy, use 'proxy: json_config.request_options[0].proxy' */
+    //proxy: json_config.request_options[0].proxy
+  }
 });
 /* Start tracking mention */
 bot.stream( 'statuses/filter', { track : json_config.tweet_info[0].tracking_twid }, function( stream ) {
