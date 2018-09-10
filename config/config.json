@@ -10,4 +10,5 @@
   ],
   "request_options": [
     {"proxy": "http://proxy.xxx:[port]"}
+  ]
 }
